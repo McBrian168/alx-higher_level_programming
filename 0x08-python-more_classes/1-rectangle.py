@@ -5,7 +5,7 @@ Defines a Rectangle class.
 
 
 class Rectangle:
-    """class tectangle"""
+    """class rectangle"""
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
@@ -25,7 +25,6 @@ class Rectangle:
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
-
 
     @height.setter
     def height(self, value):
