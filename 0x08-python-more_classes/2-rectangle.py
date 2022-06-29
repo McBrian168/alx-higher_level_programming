@@ -8,9 +8,11 @@ class Rectangle:
 
     """class rectangle"""
     def __init__(self, width=0, height=0):
+        """Initializes the Rectangle"""
         self.width = width
         self.height = height
-        """Initializes a Rectangle instance"""
+
+        @property
     def area(self):
         return self.__width * self.__height
 
