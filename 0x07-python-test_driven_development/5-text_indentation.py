@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
 This is the "5-test_indentation" module.
-
 The 5-text_indentation module supplies one function, text_indentation(text).
 """
 
@@ -17,10 +16,10 @@ def text_indentation(text):
                 continue
             else:
                 flag = 1
-            if flag == 1:
-                if a == '?' or a == '.' or a == ':':
-                    print(a)
-                    print()
-                    flag = 0
-                else:
-                    print(a, end="")
+        if flag == 1:
+            if a == '?' or a == '.' or a == ':':
+                print(a)
+                print()
+                flag = 0
+            else:
+                print(a, end="")
