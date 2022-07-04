@@ -1,9 +1,12 @@
 #!/usr/bin/python3
 """
-Create an empty class
+class BaseGeometry based on 5-base_geomtry.py
 """
 
 
 class BaseGeometry():
-    """empty class"""
-    pass
+    """
+    public intance, that raises an exception
+    """
+    def area(self):
+        raise Exception('area() is not implemented')
