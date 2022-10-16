@@ -1,20 +1,20 @@
 #!/usr/bin/node
 
-if (process.argv.length < 4) {
-  console.log('0');
-} else {
-  const arr = process.argv.slice(2);
-  let secondElement = Number.MIN_VALUE;
-  let maxValue = Number.MAX_VALUE;
+let biggest = 0;
+let i;
+const arrayNumbers = [];
 
-  arr.forEach(function (element) {
-    element = parseInt(element);
-    if (element > maxValue) {
-      secondElement = maxValue;
-      maxValue = element;
-    } else if (secondElement < element && maxValue > element) {
-      secondElement = element;
-    }
-  });
-  console.log(secondElement);
+for (i = 2; i < process.argv.length; i++) {
+  if (Number.isNaN(parseInt(process.argv[i])) === false) {
+    arrayNumbers[i - 2] = parseInt(process.argv[i]);
+  }
 }
+
+if (arrayNumbers.length > 1) {
+  biggest = Math.max.apply(null, arrayNumbers);
+  i = arrayNumbers.indexOf(biggest);
+  arrayNumbers[i] = -Infinity;
+  biggest = Math.max.apply(null, arrayNumbers);
+}
+
+console.log(biggest);
