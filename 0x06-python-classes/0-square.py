@@ -1,7 +1,7 @@
-#!/usr/bin/python
-"""lename:  0-square"""
+#!/usr/bin/python3
+""" Creating a square class """
+
 
 class Square:
-"""An empty class Square that defines a square:"""
-pass
-
+    """ Creating a square class """
+    pass
